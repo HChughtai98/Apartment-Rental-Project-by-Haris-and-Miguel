@@ -1,0 +1,15 @@
+.FooterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58, 91, 128);
+  border: solid 3px black;
+  padding-right: 10px;
+  color: white;
+}
+
+.FooterDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
