@@ -1,8 +1,3 @@
-.SidebarContainer {
-  display: flex;
-  justify-content: flex-end;
-  background-color: blueviolet;
-}
 .SidebarDiv {
   display: flex;
   flex-direction: column;
@@ -10,8 +5,8 @@
   align-items: center;
   background-color: rgb(153, 182, 184);
   width: 10rem;
-  min-height: 44rem;
-  max-height: 44rem;
+  min-height: 42.5rem;
+  max-height: 42.5rem;
   color: white;
   font-weight: bold;
 }

@@ -9,6 +9,7 @@ function App() {
     <>
       <div>
         <Header />
+        {/*        <Screen /> */}
         <Sidebar />
         <Footer />
       </div>
