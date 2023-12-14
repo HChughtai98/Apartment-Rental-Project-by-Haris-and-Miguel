@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.HomepageCtn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  width: 100rem;
+  height: 100%;
+  flex-wrap: wrap;
+  overflow-wrap: normal;
+}
+
+.itemContainer {
+  width: 100%;
+  height: 20rem;
+  margin-right: 5rem;
+  border: solid 1px rgba(0, 0, 0, 0.205);
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.itemContainer img {
+  height: 300px;
+  width: 30%;
+  margin-left: 1rem;
+  margin-top: 0.6rem;
+}
+
+.nameInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.locationInfo {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.locationInfo p:first-child {
+  font-weight: bold;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.ratingDiv {
+  display: block;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.outerRatingDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.detailsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.priceTag {
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+
+.responseTime {
+  color: rgba(0, 0, 0, 0.459);
+  font-size: 0.9rem;
+  padding-top: 0.1em;
+  padding-left: 0.2rem;
+}
