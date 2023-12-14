@@ -1,5 +1,6 @@
 import React from "react";
 import "/src/styles/Homepage.css";
+/* import "./styles/Favourites.css"; */
 
 const Homepage = ({ appartmentList }) => {
   return (
@@ -17,7 +18,9 @@ const Homepage = ({ appartmentList }) => {
                   <div className="locationInfo">
                     <p>{currentAppartment.country},</p>
                     <p>{currentAppartment.city}</p>{" "}
-                    <p className="responseTime">Response Time: {currentAppartment.host_response_time}</p>
+                    <p className="responseTime">
+                      Response Time: {currentAppartment.host_response_time}
+                    </p>
                   </div>
                 </div>
                 <div className="outerRatingDiv">
@@ -35,6 +38,9 @@ const Homepage = ({ appartmentList }) => {
             </div>
           );
         })}
+        <div className="placeHolder_favourites">
+          <p>PLACEHOLDER FOR FAVOURITES</p>
+        </div>
       </div>
     </div>
   );
