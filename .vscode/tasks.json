@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "Apartment_Rental_Project",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - Apartment_Rental_Project",
+			"detail": "vite build"
+		}
+	]
+}
