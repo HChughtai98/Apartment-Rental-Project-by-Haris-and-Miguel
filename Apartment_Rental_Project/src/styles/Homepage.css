@@ -13,6 +13,10 @@
   overflow-wrap: normal;
 }
 
+.itemContainer img {
+  height: 200px;
+}
+
 .itemContainer {
   width: 70%;
   height: auto;
