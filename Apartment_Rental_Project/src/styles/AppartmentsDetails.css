@@ -1,3 +1,7 @@
+.appartment-details-container {
+    margin: 20px;
+}
+
 .appartment-details-container button {
     margin: 2%;
 }
@@ -5,4 +9,27 @@
 .appartment-details-container label {
     display: flex;
     justify-content: end;
+    margin: 10px;
+    font-weight: 500;
+}
+
+button {
+    font-size: clamp(16px, 2vw, 22px);
+    background-color: rgb(109, 110, 110);
+    color: #fff;
+    min-height: 32px;
+    padding: 1vh 1vw;
+    border: 1;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.589); 
+    outline: none; 
+    transition: 0.2s all; 
+}
+
+button:active {
+    transform: scale(0.9);     
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.589);     
 }

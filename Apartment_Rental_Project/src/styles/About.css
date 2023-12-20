@@ -1,10 +1,25 @@
 .content {
-    margin: 5%
+    margin: 3%;
+    width: 50%
+}
+
+.title {
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 5%;
+    margin-bottom: 5%;
 }
 
 .card {
+    width: 30%;
     display: flex;
-    padding: 5%;
+    justify-content: end;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+}
+
+.details {
+    margin-left: 4%;
 }
 
 .foto {
@@ -13,10 +28,13 @@
 }
 
 .link {
-    max-width: 4vw;
-    max-heigth: 4vh;
+    max-width: 2vw;
+    max-heigth: 2vh;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
 .card p {
     font-weight: bold;
+    margin-left: 2%;
 }

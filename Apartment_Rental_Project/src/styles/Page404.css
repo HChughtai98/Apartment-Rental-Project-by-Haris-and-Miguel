@@ -1,0 +1,30 @@
+.container h2 {
+    font-size: 50px;
+    padding: 5%;
+}
+
+.container p {
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+.container button {
+    font-size: clamp(16px, 2vw, 22px);
+    background-color: rgb(109, 110, 110);
+    color: #fff;
+    min-height: 32px;
+    padding: 1vh 1vw;
+    border: 1;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.589); 
+    outline: none; 
+    transition: 0.2s all; 
+}
+
+.container button:active {
+    transform: scale(0.9);     
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.589);     
+}

@@ -65,7 +65,7 @@ const [isUpdating, setIsUpdating] = useState(false);
 
         <button type="button" onClick={() => {
           setIsUpdating (!isUpdating)
-        }}>Show form</button>
+        }}>Update</button>
         {
           isUpdating && <form onSubmit={handleSubmit}>
             <label>Name:<input type="text" value={newName}onChange={(event) => setNewName(event.target.value)}/></label>

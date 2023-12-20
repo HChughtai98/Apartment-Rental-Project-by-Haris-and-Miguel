@@ -61,7 +61,6 @@ function App() {
             <Route path="*" element={<Page404 />} />
             <Route path='/about' element={<About />} />
             {/*<Route path='/apartments/new' element={<NewApartment setApartment={setApartment} />} />*/}
-            {/*<Route path='/apartments/update/:apartmentId' element={<UpdateApartment updateApartment={updateApartment} />} />*/}
             {/*<Route path='/favorites' element={<NewApartment setApartment={setApartment} />} />*/}
             
           </Routes>
