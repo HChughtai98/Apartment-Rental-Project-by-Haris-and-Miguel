@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import AppartmentListData from "../dataset/AppartmentList.json";
+import { Link } from "react-router-dom";
 
 function AppartmentsDetailsPage() {
   const { appartmentId } = useParams();
@@ -39,9 +40,13 @@ function AppartmentsDetailsPage() {
           </div>
         </div>
       </div>
-      <button type="button" onClick={() => window.history.back()}>
-        Go Back
-      </button>
+      <div>
+        <Link to='/'>
+          <button type="button">Go Back</button>
+        </Link>        
+
+        <button type="button">Delete</button>
+      </div>      
     </div>
   );
 }

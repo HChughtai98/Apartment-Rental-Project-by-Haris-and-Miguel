@@ -9,7 +9,6 @@ function Header() {
       <h1>M&H Rental Admin Dashboard</h1>
       <img src={Logo}></img>
       <p>Designed by Miguel & Haris</p>
-      <img className="menuIcon"src={MenuIcon}></img>
     </div>
   );
 }

@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
 import AppartmentsDetailsPage from "./components/AppartmentsDetails";
+import Page404 from "./components/Page404";
+
 
 import "./App.css";
 import { Route, Routes, Link, useNavigate } from "react-router-dom";
@@ -33,12 +35,12 @@ function App() {
               path="/appartments/:appartmentId"
               element={<AppartmentsDetailsPage />}
             />
-
+            <Route path="*" element={<Page404 />} />
             {/*<Route path='/about' element={<About />} />*/}
             {/*<Route path='/apartments/new' element={<NewApartment setApartment={setApartment} />} />*/}
             {/*<Route path='/apartments/update/:apartmentId' element={<UpdateApartment updateApartment={updateApartment} />} />*/}
             {/*<Route path='/favorites' element={<NewApartment setApartment={setApartment} />} />*/}
-            {/*<Route path='*' element={<Page404 />} />*/}
+            
           </Routes>
         </div>
         <Footer />
