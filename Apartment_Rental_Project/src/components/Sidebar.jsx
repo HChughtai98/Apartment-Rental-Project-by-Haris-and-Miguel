@@ -15,13 +15,9 @@ const Sidebar = () => {
           <p>Favourites</p>
         </Link>
         <br />
-        <Link to={'/apartments/new'}>
-          <p>Add Appartment</p>
-        </Link>
-        <br />
         <Link to={'/about'}>
           <p>About Us</p> 
-        </Link>
+        </Link>  
       </div>
     </div>
   );

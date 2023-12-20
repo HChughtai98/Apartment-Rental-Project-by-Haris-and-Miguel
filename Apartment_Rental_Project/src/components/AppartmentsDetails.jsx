@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import AppartmentListData from "../dataset/AppartmentList.json";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import "/src/styles/AppartmentsDetails.css";
 
 
 function AppartmentsDetailsPage({appartmentList, handleDelete, handleUpdateAppartment}) {

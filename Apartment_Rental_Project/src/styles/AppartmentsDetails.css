@@ -1,0 +1,8 @@
+.appartment-details-container button {
+    margin: 2%;
+}
+
+.appartment-details-container label {
+    display: flex;
+    justify-content: end;
+}
