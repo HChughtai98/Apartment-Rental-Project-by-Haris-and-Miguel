@@ -1,0 +1,17 @@
+.content {
+    max-width: 100vw;
+}
+
+.card {
+    display: flex;
+
+}
+
+.card img {
+    max-width: 10vw;
+    max-heigth: 10vh;
+}
+
+.card p {
+    font-weight: bold;
+}

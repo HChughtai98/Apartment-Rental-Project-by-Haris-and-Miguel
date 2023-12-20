@@ -19,10 +19,6 @@ const Sidebar = () => {
           <p>Add Appartment</p>
         </Link>
         <br />
-        <Link to={'/apartments/update'}>
-          <p>Update Appartment</p> 
-        </Link>
-        <br />
         <Link to={'/about'}>
           <p>About Us</p> 
         </Link>

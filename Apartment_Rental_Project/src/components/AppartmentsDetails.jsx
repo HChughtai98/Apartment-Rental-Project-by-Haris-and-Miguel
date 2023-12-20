@@ -1,15 +1,28 @@
 import { useParams } from "react-router-dom";
 import AppartmentListData from "../dataset/AppartmentList.json";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-function AppartmentsDetailsPage() {
+
+function AppartmentsDetailsPage({appartmentList, handleDelete, handleUpdateAppartment}) {
   const { appartmentId } = useParams();
-  const selectedAppartment = AppartmentListData.find(
+  const selectedAppartment = appartmentList.find(
     (appartment) => appartment.id == appartmentId
   );
+const [isUpdating, setIsUpdating] = useState(false);
 
   if (!selectedAppartment) {
     return <div>Appartment not found</div>;
+  }
+  const [newName, setNewName] = useState(selectedAppartment.name);
+  const [newDescription, setNewDescription] = useState(selectedAppartment.description);
+  const [newScore, setNewScore] = useState(selectedAppartment.review_scores_rating);
+  const [newPrice, setNewPrice] = useState(selectedAppartment.price);
+
+  function handleSubmit (event){
+    event.preventDefault()
+    const updatedAppartment = {...selectedAppartment, name: newName, description: newDescription, review_scores_rating: newScore, price: newPrice }
+    handleUpdateAppartment(updatedAppartment)
   }
 
   return (
@@ -45,7 +58,22 @@ function AppartmentsDetailsPage() {
           <button type="button">Go Back</button>
         </Link>        
 
-        <button type="button">Delete</button>
+        <button type="button" onClick={() => {
+          handleDelete(selectedAppartment.id)
+        }}>Delete</button>
+
+        <button type="button" onClick={() => {
+          setIsUpdating (!isUpdating)
+        }}>Show form</button>
+        {
+          isUpdating && <form onSubmit={handleSubmit}>
+            <label>Name:<input type="text" value={newName}onChange={(event) => setNewName(event.target.value)}/></label>
+            <label>Description:<input type="text" value={newDescription}onChange={(event) => setNewDescription(event.target.value)}/></label>
+            <label>Score:<input type="number" value={newScore}onChange={(event) => setNewScore(event.target.value)}/></label>
+            <label>Price:<input type="number" value={newPrice}onChange={(event) => setNewPrice(event.target.value)}/></label>
+            <button type="submit">Save</button>
+          </form>
+        }
       </div>      
     </div>
   );
